@@ -1,0 +1,12 @@
+---
+description: After substantive edits to this repo, sync to GitHub so Vercel redeploys
+alwaysApply: true
+---
+
+# Deploy path: GitHub → Vercel
+
+- **Saving files in the editor does not deploy.** A **git commit** is required.
+- This repo runs **Husky `post-commit`**: after every successful `git commit`, **`git push` runs automatically** to `origin`.
+- Prefer **`npm run ship -- "feat: concise summary"`** to stage everything, commit with a message, and trigger the hook push.
+
+If push fails (network, auth), fix SSH/credentials locally; commits remain safe.

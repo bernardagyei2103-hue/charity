@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+# Optional: npm run lint
+exit 0

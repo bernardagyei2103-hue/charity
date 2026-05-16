@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+echo "husky(post-commit): pushing to GitHub (Vercel will rebuild if repo is linked)..."
+git push
