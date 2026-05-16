@@ -11,7 +11,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildPageMetadata({
   title: "Stories · Faces Behind the Figures",
   description:
-    "Beneficiary journeys, watershed breakthroughs, and volunteer chronicles grounding HopeRise programs in human storytelling.",
+    "Beneficiary journeys, watershed breakthroughs, and volunteer chronicles grounding Bridge Builders Guild programs in human storytelling.",
   pathname: "/stories/",
 });
 

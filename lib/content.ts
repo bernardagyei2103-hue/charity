@@ -86,7 +86,7 @@ export const FEATURED_STORIES: Story[] = [
   {
     title: "How Access to Education Changed Ama’s Life",
     beforeAfter:
-      "Before HopeRise, Ama skipped class to haul water across unsafe roads at dawn. Today she leads a literacy circle for younger girls—with plans to train as a teacher.",
+      "Before the Guild, Ama skipped class to haul water across unsafe roads at dawn. Today she leads a literacy circle for younger girls—with plans to train as a teacher.",
     href: "/stories/#story-ama",
     image:
       "https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1200&q=80",
@@ -113,7 +113,7 @@ export const FEATURED_STORIES: Story[] = [
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    quote: "HopeRise doesn’t just deliver aid—they create lasting transformation rooted in dignity.",
+    quote: "The Guild doesn’t just deliver aid—they create lasting transformation rooted in dignity.",
     name: "Jordan Ellis",
     role: "Chief Impact Officer, Meridian Logistics",
     type: "Partner",
@@ -148,7 +148,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   },
   {
     q: "Is my donation tax deductible?",
-    a: "HopeRise Foundation is structured as a tax-exempt public charity where applicable. Receipts issue automatically via email; consult your accountant for eligibility in your jurisdiction.",
+    a: "The Bridge Builders Guild is structured as a tax-exempt public charity where applicable. Receipts issue automatically via email; consult your accountant for eligibility in your jurisdiction.",
   },
   {
     q: "Can I volunteer remotely?",

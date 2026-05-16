@@ -5,7 +5,7 @@ import { buildPageMetadata } from "@/lib/seo";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: `${SITE.name} | Delivering Trusted Humanitarian Programs`,
+  title: `${SITE.name} | Trusted humanitarian programs`,
   description: SITE.description,
   pathname: "/",
 });

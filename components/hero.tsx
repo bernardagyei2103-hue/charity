@@ -36,7 +36,7 @@ export function Hero() {
       <motion.div className="absolute inset-0" {...parallaxProps}>
         <Image
           src="/hero/hero-background.png"
-          alt="HopeRise volunteers and local children gathered together with donated supplies outside a community center"
+          alt="Volunteers and local families gathered with donated supplies outside a community center after a Guild distribution"
           fill
           priority
           className="object-cover object-[center_30%]"

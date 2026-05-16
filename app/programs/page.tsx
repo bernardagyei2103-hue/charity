@@ -12,7 +12,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = buildPageMetadata({
   title: "Programs · Education, Water, Health & Empowerment",
   description:
-    "Explore HopeRise Foundation initiatives spanning scholarships, maternal health corridors, watershed infrastructure, and women-led livelihood accelerators.",
+    "Explore initiatives from The Bridge Builders Guild spanning scholarships, maternal health corridors, watershed infrastructure, and women-led livelihood accelerators.",
   pathname: "/programs/",
 });
 

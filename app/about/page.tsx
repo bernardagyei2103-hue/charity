@@ -12,7 +12,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = buildPageMetadata({
   title: "About · Mission, Vision, Story & Leadership",
   description:
-    "Discover HopeRise Foundation founding urgency, standards for dignity, and leadership safeguarding long-term stewardship.",
+    "Discover founding urgency behind The Bridge Builders Guild, standards for dignity, and leadership safeguarding long-term stewardship.",
   pathname: "/about/",
 });
 
@@ -59,9 +59,9 @@ export default function AboutPage() {
               Mission, vision, story, leadership
             </h1>
             <p className="mt-5 text-base leading-relaxed text-white/70">
-              We exist because opportunity still ships with fine print for millions of families. HopeRise removes
-              asterisks through programs co-led by neighbors, transparency radical enough to publish misses alongside wins,
-              and ethics infrastructure that never feels optional.
+              We exist because too many nonprofits treat dignity as contingent. The Guild removes asterisks through programs
+              co-led by neighbors, transparency radical enough to publish misses alongside wins, and ethics infrastructure
+              that never feels optional.
             </p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <Button asChild size="lg" variant="secondary" className="rounded-full">
@@ -102,7 +102,7 @@ export default function AboutPage() {
             <div className="mt-10 rounded-[34px] bg-white p-8 shadow-soft ring-1 ring-hope/10">
               <div className="text-[11px] font-semibold uppercase tracking-wide text-hope-muted">Operational story</div>
               <p className="mt-4 text-base leading-relaxed text-hope-muted">
-                Founded in Geneva living rooms and Accra warehouses alike, HopeRise grew from patching immediate gaps into
+                Founded in Geneva living rooms and Accra warehouses alike, the Guild grew from patching immediate gaps into
                 engineering durable systems—because dignity requires continuity, not camera-ready bandages. Today,
                 thirteen national hubs coordinate alliances with ministries, diaspora fundraisers, grassroots cooperatives,
                 and logistics partners, all held to safeguarding clauses even when inconvenient.

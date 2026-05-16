@@ -13,7 +13,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildPageMetadata({
   title: "Impact · Verified Metrics & Public Reports",
   description:
-    "Quantified stewardship across HopeRise programs, with externally reviewed figures and allocation transparency donors can scrutinize freely.",
+    "Quantified stewardship across Guild programs, with externally reviewed figures and allocation transparency donors can scrutinize freely.",
   pathname: "/impact/",
 });
 

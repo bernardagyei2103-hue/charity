@@ -1,10 +1,10 @@
 export const SITE = {
-  name: "HopeRise Foundation",
+  name: "The Bridge Builders Guild",
   tagline: "Restoring Hope. Changing Lives. Building Futures.",
-  url: "https://hoperise.example.org",
+  url: "https://bridgebuilders.example.org",
   description:
-    "HopeRise Foundation empowers vulnerable communities through education, healthcare, clean water, and sustainable development—with transparency donors can trust.",
-  email: "hello@hoperise.org",
+    "The Bridge Builders Guild empowers vulnerable communities through education, healthcare, clean water, and sustainable development—with transparency donors can trust.",
+  email: "hello@bridgebuildersguild.org",
   donateUrl: "https://example.com/donate",
   telephone: "+1 (800) 555-0199",
 };

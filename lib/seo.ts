@@ -26,7 +26,7 @@ export function buildPageMetadata(input: BuildMetadataInput): Metadata {
           url: "https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1600&q=80",
           width: 1600,
           height: 900,
-          alt: "Volunteers collaborating with HopeRise Foundation",
+          alt: "Volunteers collaborating with Bridge Builders Guild programs",
         },
       ],
     },

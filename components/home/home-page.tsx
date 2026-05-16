@@ -41,7 +41,7 @@ export function HomePage() {
           <SectionReveal>
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Our story</div>
             <h2 className="mt-4 font-serif text-[clamp(2.1rem,4.3vw,3.05rem)] font-semibold leading-tight tracking-tight text-hope-deep">
-              Why HopeRise Exists
+              Why we exist
             </h2>
             <div className="mt-6 space-y-5 text-base leading-relaxed text-hope-muted">
               <p>
@@ -49,7 +49,7 @@ export function HomePage() {
                 textbooks, clinician minutes, liters of safe water, credit to startagain after shocks.
               </p>
               <p>
-                HopeRise exists to shorten that bottleneck with programs co-owned by neighbors, audited books,
+                The Guild exists to shorten that bottleneck with programs co-owned by neighbors, audited books,
                 and reporting honest enough for donors—and dignified enough for the people we serve.
               </p>
               <p>
@@ -296,7 +296,7 @@ export function HomePage() {
               Built for courageous brands
             </div>
             <h2 className="mt-6 font-serif text-[2rem] font-semibold leading-tight tracking-tight text-hope-deep sm:text-[2.25rem]">
-              Partner With HopeRise
+              Partner with the Guild
             </h2>
             <p className="mt-5 text-base leading-relaxed text-hope-muted">
               Multi-year alliances pair capital with safeguarding, employee activation, storytelling guardrails—and

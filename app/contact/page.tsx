@@ -6,9 +6,9 @@ import { buildPageMetadata } from "@/lib/seo";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Contact · Reach HopeRise Foundation",
+  title: "Contact · Reach The Bridge Builders Guild",
   description:
-    "Reach HopeRise programmatic desks, safeguarding hotlines equivalents via email introductions, partnerships office, volunteer coordination—all with humane response windows.",
+    "Reach Guild programmatic desks, safeguarding hotlines equivalents via email introductions, partnerships office, volunteer coordination—all with humane response windows.",
   pathname: "/contact/",
 });
 
@@ -50,7 +50,7 @@ export default function ContactPage() {
             </p>
             <div
               role="img"
-              aria-label="Map placeholder illustrating HopeRise headquarters location pending integration"
+              aria-label="Map placeholder illustrating Guild headquarters location pending integration"
               className="relative mt-8 aspect-[4/3] overflow-hidden rounded-[26px] bg-gradient-to-br from-hope-deep via-hope to-growth opacity-95 ring-1 ring-hope/10"
             >
               <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_35%_30%,rgba(255,255,255,0.22),transparent_62%)]" />

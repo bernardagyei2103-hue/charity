@@ -13,7 +13,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = buildPageMetadata({
   title: "Get Involved · Volunteer, Partner, Donate",
   description:
-    "Volunteer deployments, ethical partnership rails, donation presets, and safeguarding onboarding for anyone ready to amplify HopeRise programs responsibly.",
+    "Volunteer deployments, ethical partnership rails, donation presets, and safeguarding onboarding for anyone ready to amplify Guild programs responsibly.",
   pathname: "/get-involved/",
 });
 
@@ -91,7 +91,7 @@ export default function GetInvolvedPage() {
           <div className="max-w-4xl space-y-5">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Partnerships</div>
             <h2 className="font-serif text-[clamp(2.1rem,4vw,3rem)] font-semibold leading-tight tracking-tight text-hope-deep">
-              Partner With HopeRise—without laundering optics
+              Partner With the Guild—without laundering optics
             </h2>
             <p className="text-base leading-relaxed text-hope-muted">
               Multi-year charters blend matching grants, skills-based volunteering, crisis capital lines, anonymized survivor storytelling guardrails—we decline vanity campaigns politely when communities disagree philosophically politely loudly validly simultaneously.
