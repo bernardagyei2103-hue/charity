@@ -36,8 +36,8 @@ export function HomePage() {
       <TrustBar />
 
       {/* About */}
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+      <section className="mx-auto max-w-shell px-3 py-16 sm:px-5 sm:py-20 lg:px-6 xl:px-10">
+        <div className="grid gap-12 xl:gap-14 2xl:gap-16 lg:grid-cols-2 lg:items-center">
           <SectionReveal>
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Our story</div>
             <h2 className="mt-4 font-serif text-[clamp(2.1rem,4.3vw,3.05rem)] font-semibold leading-tight tracking-tight text-hope-deep">
@@ -60,8 +60,8 @@ export function HomePage() {
           </SectionReveal>
 
           <SectionReveal delay={0.06}>
-            <div className="relative overflow-hidden rounded-[34px] ring-1 ring-hope/10">
-              <div className="relative aspect-[16/12]">
+            <div className="relative overflow-hidden rounded-[36px] ring-1 ring-hope/10 shadow-soft">
+              <div className="relative aspect-[16/10] lg:aspect-[16/11] xl:min-h-[22rem]">
                 <Image
                   src="/team/nancy-anderson.png"
                   alt="Portrait of Dr. Nancy Anderson, co-founder and Chief Executive"
@@ -71,26 +71,26 @@ export function HomePage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-hope-deep/60 via-transparent to-transparent" />
               </div>
-              <div className="relative bg-white px-8 py-10">
+              <div className="relative bg-white px-6 py-8 sm:px-10 sm:py-11 lg:px-11 lg:py-12">
                 <div className="text-[11px] font-bold uppercase tracking-[0.3em] text-hope-muted">
                   Founder message
                 </div>
-                <blockquote className="mt-5 font-serif text-xl font-semibold leading-snug text-hope-deep">
+                <blockquote className="mt-5 font-serif text-[clamp(1.25rem,2.15vw,1.625rem)] font-semibold leading-snug text-hope-deep">
                   “Every child deserves opportunity, dignity, and hope.”
                 </blockquote>
-                <div className="mt-6 text-sm leading-relaxed text-hope-muted">
+                <div className="mt-6 text-sm leading-relaxed text-hope-muted sm:text-[15px]">
                   — Dr. Nancy Anderson · Co-founder &amp; Chief Executive
                 </div>
-                <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                  <div className="rounded-2xl bg-ivory p-4 ring-1 ring-hope/10">
+                <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                  <div className="rounded-[22px] bg-ivory p-5 ring-1 ring-hope/10 sm:p-6">
                     <div className="text-[11px] font-semibold uppercase tracking-wide text-hope-muted">Mission</div>
-                    <div className="mt-2 text-sm font-semibold text-hope-deep">
+                    <div className="mt-3 text-[15px] font-semibold leading-snug text-hope-deep">
                       Unlock agency through essentials done excellently—with neighbors, not above them.
                     </div>
                   </div>
-                  <div className="rounded-2xl bg-hope/5 p-4 ring-1 ring-hope/10">
+                  <div className="rounded-[22px] bg-hope/5 p-5 ring-1 ring-hope/10 sm:p-6">
                     <div className="text-[11px] font-semibold uppercase tracking-wide text-hope-muted">Vision</div>
-                    <div className="mt-2 text-sm font-semibold text-hope-deep">
+                    <div className="mt-3 text-[15px] font-semibold leading-snug text-hope-deep">
                       Communities resilient enough that hope becomes infrastructure, not improvisation.
                     </div>
                   </div>
@@ -103,8 +103,8 @@ export function HomePage() {
 
       {/* Impact areas */}
       <section className="bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <SectionReveal className="max-w-3xl">
+        <div className="mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+          <SectionReveal className="max-w-5xl">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">
               Pillars that hold everything up
             </div>
@@ -117,7 +117,7 @@ export function HomePage() {
             </p>
           </SectionReveal>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
             {IMPACT_AREAS.map((a) => (
               <ImpactCard key={a.title} item={a} />
             ))}
@@ -128,8 +128,8 @@ export function HomePage() {
       {/* Impact stats */}
       <section className="relative overflow-hidden py-16 sm:py-20">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ivory to-white" />
-        <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <SectionReveal className="max-w-4xl">
+        <div className="relative mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+          <SectionReveal className="max-w-5xl">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">
               Accountability in numbers
             </div>
@@ -156,9 +156,9 @@ export function HomePage() {
 
       {/* Stories */}
       <section className="bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
           <SectionReveal className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-            <div className="max-w-3xl">
+            <div className="max-w-5xl">
               <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">
                 Humans first — always
               </div>
@@ -174,7 +174,7 @@ export function HomePage() {
             </Button>
           </SectionReveal>
 
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+          <div className="mt-12 grid gap-8 lg:grid-cols-3">
             {FEATURED_STORIES.map((s) => (
               <StoryCard key={s.title} story={s} />
             ))}
@@ -183,13 +183,13 @@ export function HomePage() {
       </section>
 
       {/* Donation */}
-      <section id="donate" className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <section id="donate" className="mx-auto max-w-shell px-3 py-16 sm:px-5 sm:py-20 lg:px-6 xl:px-10">
         <DonationCard tiers={[...DONATION_TIERS]} />
       </section>
 
       {/* Programs */}
-      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 sm:pb-20 lg:px-8">
-        <SectionReveal className="max-w-4xl">
+      <section className="mx-auto max-w-shell px-3 pb-16 sm:px-5 sm:pb-20 lg:px-6 xl:px-10">
+        <SectionReveal className="max-w-5xl">
           <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">
             Proof you can wander through
           </div>
@@ -208,8 +208,8 @@ export function HomePage() {
       {/* Transparency */}
       <section id="transparency" className="relative overflow-hidden border-y border-hope/10 bg-ivory py-16 sm:py-20">
         <div className="pointer-events-none absolute -right-44 top-20 h-[420px] w-[420px] rounded-full bg-sunrise/10 blur-[130px]" />
-        <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:items-start">
+        <div className="relative mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+          <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:items-start">
             <SectionReveal className="max-w-xl space-y-4">
               <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Transparency</div>
               <h2 className="font-serif text-[clamp(2.05rem,4vw,2.95rem)] font-semibold leading-tight tracking-tight text-hope-deep">
@@ -220,9 +220,9 @@ export function HomePage() {
                 purchase logs with classroom rosters—not because trust is scarce, but because it should compound.
               </p>
 
-              <div className="rounded-[28px] bg-white p-6 shadow-soft ring-1 ring-hope/10">
+              <div className="rounded-[30px] bg-white p-8 shadow-soft ring-1 ring-hope/10">
                 <div className="font-serif text-lg font-semibold text-hope-deep">Our transparency promise</div>
-                <p className="mt-3 text-sm leading-relaxed text-hope-muted">
+                <p className="mt-4 text-[15px] leading-relaxed text-hope-muted">
                   If we miss a milestone, donors hear it plainly alongside the corrective roadmap. Good news only
                   annual reports are for annual reports—not for people relying on accuracy to give again.
                 </p>
@@ -236,9 +236,9 @@ export function HomePage() {
               </Button>
             </SectionReveal>
 
-            <SectionReveal delay={0.06} className="rounded-[34px] bg-white p-8 shadow-soft ring-1 ring-hope/10 sm:p-10">
+            <SectionReveal delay={0.06} className="rounded-[34px] bg-white p-10 shadow-soft ring-1 ring-hope/10 sm:p-12">
               <div className="font-serif text-xl font-semibold text-hope-deep">Fund allocation</div>
-              <p className="mt-3 text-sm leading-relaxed text-hope-muted">
+              <p className="mt-4 text-[15px] leading-relaxed text-hope-muted">
                 Percentages reflect consolidated expenses across audited fiscal periods.
               </p>
               <div className="mt-8 space-y-7">
@@ -252,8 +252,8 @@ export function HomePage() {
       </section>
 
       {/* Volunteer / Partner */}
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="grid gap-6 lg:grid-cols-2">
+      <section className="mx-auto max-w-shell px-3 py-16 sm:px-5 sm:py-20 lg:px-6 xl:px-10">
+        <div className="grid gap-8 lg:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, y: 14 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -261,7 +261,7 @@ export function HomePage() {
             transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
             className="relative overflow-hidden rounded-[34px] bg-gradient-to-br from-hope-deep via-hope to-hope-light p-[1px] shadow-glow"
           >
-            <div className="relative h-full rounded-[33px] bg-hope-deep px-8 py-12 text-white">
+            <div className="relative h-full rounded-[33px] bg-hope-deep px-10 py-14 text-white">
               <div className="inline-flex rounded-full bg-white/10 px-4 py-2 text-[11px] font-semibold ring-1 ring-white/15 backdrop-blur">
                 <Users className="mr-2 h-4 w-4 text-sunrise-soft" aria-hidden />
                 Humanity-powered delivery
@@ -315,15 +315,15 @@ export function HomePage() {
       </section>
 
       {/* Map */}
-      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 sm:pb-20 lg:px-8">
+      <section className="mx-auto max-w-shell px-3 pb-16 sm:px-5 sm:pb-20 lg:px-6 xl:px-10">
         <GlobalImpactMap />
       </section>
 
       {/* News */}
       <section className="border-t border-hope/10 bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
           <SectionReveal className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-            <div className="max-w-3xl">
+            <div className="max-w-5xl">
               <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">
                 Notes from the field
               </div>
@@ -365,7 +365,7 @@ export function HomePage() {
       </section>
 
       {/* FAQ */}
-      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 sm:pb-20 lg:px-8">
+      <section className="mx-auto max-w-shell px-3 pb-16 sm:px-5 sm:pb-20 lg:px-6 xl:px-10">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.15fr)] lg:items-start">
           <SectionReveal>
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">
@@ -387,7 +387,7 @@ export function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="mx-auto max-w-6xl px-4 pb-20 sm:px-6 sm:pb-24 lg:px-8">
+      <section className="mx-auto max-w-shell px-3 pb-20 sm:px-5 sm:pb-24 lg:px-6 xl:px-10">
         <CTASection
           eyebrow="The next chapter begins now"
           title="Hope Begins With Action"

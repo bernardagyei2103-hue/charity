@@ -11,7 +11,7 @@ const partners = [
 export function TrustBar() {
   return (
     <section className="border-b border-hope/10 bg-white">
-      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-shell px-3 py-10 sm:px-5 lg:px-6 xl:px-10">
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:items-center">
           <SectionReveal className="space-y-4">
             <div className="flex flex-wrap items-center gap-2">
@@ -35,11 +35,11 @@ export function TrustBar() {
             </div>
           </SectionReveal>
 
-          <SectionReveal delay={0.06} className="grid gap-3 sm:grid-cols-3">
+          <SectionReveal delay={0.06} className="grid gap-4 sm:grid-cols-3">
             {partners.map((name) => (
               <div
                 key={name}
-                className="relative overflow-hidden rounded-2xl bg-ivory p-5 ring-1 ring-hope/10"
+                className="relative overflow-hidden rounded-[26px] bg-ivory p-6 ring-1 ring-hope/10"
               >
                 <div className="flex items-start justify-between gap-3">
                   <div className="font-serif text-sm font-semibold leading-snug text-hope-deep">{name}</div>

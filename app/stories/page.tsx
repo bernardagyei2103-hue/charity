@@ -73,8 +73,8 @@ export default function StoriesPage() {
   return (
     <main className="bg-ivory">
       <section className="border-b border-hope/10 bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-          <div className="max-w-4xl space-y-4">
+        <div className="mx-auto max-w-shell px-3 py-16 sm:px-5 sm:py-20 lg:px-6 xl:px-10">
+          <div className="max-w-5xl space-y-4">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Stories</div>
             <h1 className="font-serif text-[clamp(2.35rem,5vw,3.65rem)] font-semibold leading-[1.02] tracking-tight text-hope-deep">
               Faces behind audited figures breathe here
@@ -94,8 +94,8 @@ export default function StoriesPage() {
         </div>
       </section>
 
-      <section id="featured" className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
-        <SectionReveal className="max-w-4xl space-y-3">
+      <section id="featured" className="mx-auto max-w-shell px-3 py-14 sm:px-5 lg:px-6 xl:px-10">
+        <SectionReveal className="max-w-5xl space-y-3">
           <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Three windows</div>
           <h2 className="font-serif text-[clamp(2.05rem,4vw,2.95rem)] font-semibold leading-tight tracking-tight text-hope-deep">
             Featured introductions
@@ -122,7 +122,7 @@ export default function StoriesPage() {
 
       {longStories.map((story, idx) => (
         <section key={story.anchor} id={story.anchor} className={`${idx % 2 === 0 ? "bg-white" : ""} scroll-mt-[84px]`}>
-          <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-shell px-3 py-16 sm:px-5 lg:px-6 xl:px-10">
             <div
               className={`grid gap-10 lg:grid-cols-2 lg:items-start ${story.reverse ? "lg:[&>*:first-child]:order-2" : ""}`}
             >
@@ -165,8 +165,8 @@ export default function StoriesPage() {
       ))}
 
       <section id="news-ghana-wells" className="border-y border-hope/10 bg-white py-14">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl space-y-3 scroll-mt-[84px]">
+        <div className="mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+          <div className="max-w-5xl space-y-3 scroll-mt-[84px]">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Dispatch</div>
             <h2 className="font-serif text-3xl font-semibold text-hope-deep">Building New Wells in Northern Ghana</h2>
             <p className="text-base leading-relaxed text-hope-muted">
@@ -177,8 +177,8 @@ export default function StoriesPage() {
       </section>
 
       <section id="news-backtoschool" className="py-14">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl space-y-3 scroll-mt-[84px]">
+        <div className="mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+          <div className="max-w-5xl space-y-3 scroll-mt-[84px]">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Notebook</div>
             <h2 className="font-serif text-3xl font-semibold text-hope-deep">Back-to-School Initiative 2026</h2>
             <p className="text-base leading-relaxed text-hope-muted">
@@ -189,8 +189,8 @@ export default function StoriesPage() {
       </section>
 
       <section id="news-volunteer-spotlight" className="border-t border-hope/10 bg-white py-14">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl space-y-3 scroll-mt-[84px]">
+        <div className="mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+          <div className="max-w-5xl space-y-3 scroll-mt-[84px]">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Volunteer prism</div>
             <h2 className="font-serif text-3xl font-semibold text-hope-deep">Volunteer Spotlight</h2>
             <p className="text-base leading-relaxed text-hope-muted">

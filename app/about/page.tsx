@@ -52,8 +52,8 @@ export default function AboutPage() {
     <main className="bg-ivory">
       <section className="relative overflow-hidden border-b border-hope/10 bg-hope-deep text-white">
         <div className="pointer-events-none absolute inset-0 bg-hero-radial opacity-[0.55]" />
-        <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-          <div className="max-w-3xl">
+        <div className="relative mx-auto max-w-shell px-3 py-16 sm:px-5 sm:py-20 lg:px-6 xl:px-10">
+          <div className="max-w-5xl">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-white/60">About</div>
             <h1 className="mt-4 font-serif text-[clamp(2.4rem,5vw,3.6rem)] font-semibold leading-tight tracking-tight">
               Mission, vision, story, leadership
@@ -75,31 +75,31 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center">
+      <section className="mx-auto max-w-shell px-3 py-16 sm:px-5 lg:px-6 xl:px-10">
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center">
           <SectionReveal>
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Where we anchor</div>
             <h2 className="mt-4 font-serif text-3xl font-semibold tracking-tight text-hope-deep sm:text-[2.5rem]">
               Mission and vision etched for adults and children alike
             </h2>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <div className="rounded-[28px] bg-white p-6 shadow-soft ring-1 ring-hope/10">
+            <div className="mt-8 grid gap-5 sm:grid-cols-2">
+              <div className="rounded-[30px] bg-white p-8 shadow-soft ring-1 ring-hope/10">
                 <div className="text-[11px] font-semibold uppercase tracking-wide text-hope-muted">Mission</div>
-                <p className="mt-3 text-sm leading-relaxed text-hope-muted">
+                <p className="mt-4 text-[15px] leading-relaxed text-hope-muted">
                   Equip underestimated communities with education, health, livelihoods, and clean water infrastructures
                   they co-own, with ethics as non-negotiable infrastructure.
                 </p>
               </div>
-              <div className="rounded-[28px] bg-white p-6 shadow-soft ring-1 ring-hope/10">
+              <div className="rounded-[30px] bg-white p-8 shadow-soft ring-1 ring-hope/10">
                 <div className="text-[11px] font-semibold uppercase tracking-wide text-hope-muted">Vision</div>
-                <p className="mt-3 text-sm leading-relaxed text-hope-muted">
+                <p className="mt-4 text-[15px] leading-relaxed text-hope-muted">
                   Futures where caregivers stop choosing between pencils and prescriptions because both arrive with
                   predictability worthy of planning years ahead.
                 </p>
               </div>
             </div>
 
-            <div className="mt-10 rounded-[34px] bg-white p-8 shadow-soft ring-1 ring-hope/10">
+            <div className="mt-10 rounded-[34px] bg-white p-10 shadow-soft ring-1 ring-hope/10">
               <div className="text-[11px] font-semibold uppercase tracking-wide text-hope-muted">Operational story</div>
               <p className="mt-4 text-base leading-relaxed text-hope-muted">
                 Founded in Geneva living rooms and Accra warehouses alike, the Guild grew from patching immediate gaps into
@@ -154,8 +154,8 @@ export default function AboutPage() {
       </section>
 
       <section className="border-t border-hope/10 bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <SectionReveal className="max-w-4xl space-y-3">
+        <div className="mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+          <SectionReveal className="max-w-5xl space-y-3">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Leadership</div>
             <h2 className="font-serif text-[clamp(2.05rem,4vw,2.95rem)] font-semibold leading-tight tracking-tight text-hope-deep">
               Guardrails lived by humans you can speak with
@@ -184,7 +184,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 pb-20 sm:px-6 sm:pb-24 lg:px-8">
+      <section className="mx-auto max-w-shell px-3 pb-20 sm:px-5 sm:pb-24 lg:px-6 xl:px-10">
         <CTASection
           tone="ivory"
           eyebrow="We answer hard questions enthusiastically"

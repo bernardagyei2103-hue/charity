@@ -34,7 +34,7 @@ export function CTASection({
       <div className="pointer-events-none absolute -left-36 top-[-80px] h-[460px] w-[460px] rounded-full bg-sunrise/12 blur-[130px]" aria-hidden />
       <div className="pointer-events-none absolute -bottom-52 right-[-80px] h-[560px] w-[560px] rounded-full bg-growth/14 blur-[150px]" aria-hidden />
 
-      <div className="relative mx-auto max-w-4xl px-6 py-12 text-center sm:px-10 sm:py-14 md:py-16">
+      <div className="relative mx-auto max-w-5xl px-6 py-14 text-center sm:px-12 sm:py-16 md:py-[4.25rem]">
         {eyebrow ? (
           <motion.div
             initial={{ opacity: 0, y: 8 }}
@@ -66,7 +66,7 @@ export function CTASection({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-10%" }}
           transition={{ duration: 0.65, delay: 0.04, ease: [0.16, 1, 0.3, 1] }}
-          className={cn("mx-auto mt-4 max-w-2xl text-base leading-relaxed", sub)}
+          className={cn("mx-auto mt-4 max-w-3xl text-base leading-relaxed md:text-[1.05rem]", sub)}
         >
           {subtext}
         </motion.p>

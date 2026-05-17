@@ -38,7 +38,7 @@ export function Footer() {
       <div className="pointer-events-none absolute -left-32 top-28 h-[420px] w-[420px] rounded-full bg-sunrise/12 blur-[90px]" aria-hidden />
       <div className="pointer-events-none absolute -bottom-56 right-[-80px] h-[520px] w-[520px] rounded-full bg-growth/10 blur-[110px]" aria-hidden />
 
-      <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-shell px-3 py-14 sm:px-5 lg:px-6 xl:px-10">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)]">
           <div>
             <div className="flex items-start justify-between gap-6">

@@ -46,8 +46,8 @@ export function Hero() {
         <div className="absolute inset-0 bg-hero-radial opacity-90 mix-blend-soft-light" />
       </motion.div>
 
-      <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-4 pb-12 pt-28 sm:px-6 sm:pb-14 sm:pt-32 lg:px-8 lg:pb-16">
-        <div className="max-w-3xl">
+      <div className="relative mx-auto flex min-h-[100svh] max-w-shell flex-col justify-end px-3 pb-12 pt-28 sm:px-5 sm:pb-14 sm:pt-32 lg:px-6 xl:px-12 lg:pb-16">
+        <div className="max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}

@@ -27,9 +27,9 @@ export function DonationCard({
         className,
       )}
     >
-      <div className="relative rounded-[33px] bg-ivory/95 px-6 py-10 backdrop-blur sm:px-10">
+      <div className="relative rounded-[33px] bg-ivory/95 px-6 py-12 backdrop-blur sm:px-12 sm:py-14">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
-          <div className="max-w-xl">
+          <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 rounded-full bg-hope/5 px-4 py-2 text-[11px] font-semibold text-hope ring-1 ring-hope/10">
               <HeartHandshake className="h-4 w-4 text-sunrise" aria-hidden />
               100% directed to programmatic outcomes • Published quarterly allocations
@@ -43,7 +43,7 @@ export function DonationCard({
             </p>
           </div>
 
-          <div className="w-full max-w-md rounded-[26px] bg-white p-5 shadow-soft ring-1 ring-hope/10">
+          <div className="w-full max-w-xl rounded-[28px] bg-white p-7 shadow-soft ring-1 ring-hope/10 lg:max-w-[28rem]">
             <div className="grid gap-3">
               {tiers.map((t) => (
                 <motion.a
@@ -54,7 +54,7 @@ export function DonationCard({
                   whileHover={{ y: -3 }}
                   whileTap={{ scale: 0.99 }}
                   className={cn(
-                    "group rounded-2xl border border-hope/10 bg-ivory/60 px-4 py-4 transition",
+                    "group rounded-2xl border border-hope/10 bg-ivory/60 px-5 py-5 transition",
                     "hover:border-sunrise/45 hover:bg-white hover:shadow-card",
                   )}
                 >

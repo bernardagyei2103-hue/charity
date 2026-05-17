@@ -16,8 +16,8 @@ export default function ContactPage() {
   return (
     <main className="bg-ivory">
       <section className="border-b border-hope/10 bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-          <div className="max-w-4xl space-y-4">
+        <div className="mx-auto max-w-shell px-3 py-16 sm:px-5 sm:py-20 lg:px-6 xl:px-10">
+          <div className="max-w-5xl space-y-4">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Contact</div>
             <h1 className="font-serif text-[clamp(2.35rem,5vw,3.55rem)] font-semibold leading-[1.02] tracking-tight text-hope-deep">
               Humans answer—no scripted chatbots gaslighting compassion
@@ -37,7 +37,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:px-8">
+      <section className="mx-auto grid max-w-shell gap-10 px-3 py-14 sm:px-5 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:px-6 xl:px-10">
         <ContactForm />
 
         <SectionReveal delay={0.05} className="space-y-6">

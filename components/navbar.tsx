@@ -35,7 +35,7 @@ export function Navbar() {
           : "border-b border-transparent bg-ivory/70 backdrop-blur-md",
       )}
     >
-      <div className="flex h-[72px] w-full items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="flex h-[72px] w-full items-center justify-between px-4 sm:px-5 lg:px-6 xl:px-10">
         <Link
           href="/"
           className="group flex items-center gap-3"
@@ -108,7 +108,7 @@ export function Navbar() {
             transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
             className="border-t border-hope/10 bg-ivory/95 backdrop-blur-xl lg:hidden"
           >
-            <div className="w-full space-y-2 px-4 py-4 sm:px-6 lg:px-8">
+            <div className="w-full space-y-2 px-4 py-4 sm:px-5 lg:px-6 xl:px-10">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.href}

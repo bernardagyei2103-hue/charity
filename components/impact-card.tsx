@@ -31,23 +31,23 @@ export function ImpactCard({ item }: { item: ImpactArea }) {
       whileHover={{ y: -6 }}
       transition={{ type: "spring", stiffness: 260, damping: 22 }}
       className={cn(
-        "group relative h-full overflow-hidden rounded-[28px] bg-gradient-to-b p-6 shadow-card ring-1 ring-hope/10",
+        "group relative h-full overflow-hidden rounded-[32px] bg-gradient-to-b p-8 shadow-card ring-1 ring-hope/10 sm:p-9",
         accent,
       )}
     >
       <div className="flex items-start justify-between gap-4">
-        <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-hope-deep text-white shadow-soft ring-1 ring-white/15">
-          <Icon className="h-6 w-6" aria-hidden />
+        <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-hope-deep text-white shadow-soft ring-1 ring-white/15">
+          <Icon className="h-7 w-7" aria-hidden />
         </div>
         <div className="rounded-full bg-white/70 px-3 py-1 text-[11px] font-semibold tracking-wide text-hope-muted ring-1 ring-hope/10 backdrop-blur">
           {item.metric}
         </div>
       </div>
 
-      <h3 className="mt-6 font-serif text-2xl font-semibold tracking-tight text-hope-deep">
+      <h3 className="mt-6 font-serif text-xl font-semibold tracking-tight text-hope-deep sm:text-[1.7rem] sm:leading-snug md:text-[1.875rem]">
         {item.title}
       </h3>
-      <p className="mt-3 text-sm leading-relaxed text-hope-muted">{item.description}</p>
+      <p className="mt-4 text-base leading-relaxed text-hope-muted">{item.description}</p>
 
       <div className="mt-8">
         <Button

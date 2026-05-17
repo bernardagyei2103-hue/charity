@@ -51,10 +51,10 @@ export function MetricsCounterStrip({
   items: readonly { value: number; suffix: string; label: string }[];
 }) {
   return (
-    <div className="grid gap-4 rounded-[28px] bg-white/8 p-4 ring-1 ring-white/14 backdrop-blur-xl sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid gap-5 rounded-[28px] bg-white/8 p-5 ring-1 ring-white/14 backdrop-blur-xl sm:grid-cols-2 sm:p-6 lg:grid-cols-4">
       {items.map((it) => (
-        <div key={it.label} className="rounded-2xl bg-hope-deep/30 px-4 py-3 ring-1 ring-white/10">
-          <div className="font-serif text-3xl font-semibold tracking-tight text-white md:text-[2.1rem]">
+        <div key={it.label} className="rounded-2xl bg-hope-deep/30 px-5 py-4 ring-1 ring-white/10">
+          <div className="font-serif text-3xl font-semibold tracking-tight text-white md:text-[2.25rem]">
             <AnimatedNumber value={it.value} suffix={it.suffix} />
           </div>
           <div className="mt-2 text-[13px] font-medium text-white/70">{it.label}</div>
@@ -73,18 +73,18 @@ export type MetricItem = {
 
 export function MetricsCounter({ items }: { items: readonly MetricItem[] }) {
   return (
-    <dl className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <dl className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
       {items.map((it) => (
         <div
           key={it.label}
-          className="group relative overflow-hidden rounded-[28px] bg-white p-6 shadow-soft ring-1 ring-hope/10"
+          className="group relative overflow-hidden rounded-[30px] bg-white p-8 shadow-soft ring-1 ring-hope/10"
         >
-          <dt className="text-sm font-semibold text-hope-muted">{it.label}</dt>
+          <dt className="text-[15px] font-semibold text-hope-muted">{it.label}</dt>
           <dd className="mt-3 font-serif text-[clamp(2.15rem,3.5vw,2.85rem)] font-semibold tracking-tight text-hope-deep">
             <AnimatedNumber value={it.value} suffix={it.suffix} />
           </dd>
           {it.supporting ? (
-            <p className="mt-3 text-sm leading-relaxed text-hope-muted">{it.supporting}</p>
+            <p className="mt-3 text-[15px] leading-relaxed text-hope-muted">{it.supporting}</p>
           ) : (
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1 translate-y-full bg-gradient-to-r from-sunrise/60 via-growth/55 to-hope-muted/55 opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100" />
           )}
