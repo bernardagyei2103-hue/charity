@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import { cn } from "@/lib/utils";
+import { useDonatePaymentModal } from "@/components/providers/donate-payment-modal-provider";
 import { Button } from "@/components/ui/button";
 
 export function CTASection({
@@ -13,6 +14,7 @@ export function CTASection({
   primary,
   secondary,
   tone = "deep",
+  primaryOpensPaymentModal = false,
 }: {
   eyebrow?: string;
   title: string;
@@ -20,7 +22,9 @@ export function CTASection({
   primary: { label: string; href: string; external?: boolean };
   secondary: { label: string; href: string; external?: boolean };
   tone?: "deep" | "ivory";
+  primaryOpensPaymentModal?: boolean;
 }) {
+  const { openPaymentMethods } = useDonatePaymentModal();
   const wrapper =
     tone === "ivory"
       ? "bg-ivory text-hope-deep ring-1 ring-hope/10"
@@ -78,16 +82,28 @@ export function CTASection({
           transition={{ duration: 0.55, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4"
         >
-          <Button
-            asChild
-            size="lg"
-            variant={tone === "ivory" ? "default" : "secondary"}
-            className="w-full rounded-full sm:w-auto"
-          >
-            <Link href={primary.href} {...(primary.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
+          {primaryOpensPaymentModal ? (
+            <Button
+              type="button"
+              size="lg"
+              variant={tone === "ivory" ? "default" : "secondary"}
+              className="w-full rounded-full sm:w-auto"
+              onClick={openPaymentMethods}
+            >
               {primary.label}
-            </Link>
-          </Button>
+            </Button>
+          ) : (
+            <Button
+              asChild
+              size="lg"
+              variant={tone === "ivory" ? "default" : "secondary"}
+              className="w-full rounded-full sm:w-auto"
+            >
+              <Link href={primary.href} {...(primary.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
+                {primary.label}
+              </Link>
+            </Button>
+          )}
           <Button
             asChild
             size="lg"

@@ -8,10 +8,12 @@ import { useEffect, useRef, useState } from "react";
 
 import { HERO_STATS, SITE } from "@/lib/site";
 import { cn } from "@/lib/utils";
+import { useDonatePaymentModal } from "@/components/providers/donate-payment-modal-provider";
 import { MetricsCounterStrip } from "@/components/metrics-counter";
 import { Button } from "@/components/ui/button";
 
 export function Hero() {
+  const { openPaymentMethods } = useDonatePaymentModal();
   const ref = useRef<HTMLElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -46,7 +48,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-hero-radial opacity-90 mix-blend-soft-light" />
       </motion.div>
 
-      <div className="relative mx-auto flex min-h-[100svh] max-w-shell flex-col justify-end px-3 pb-12 pt-28 sm:px-5 sm:pb-14 sm:pt-32 lg:px-6 xl:px-12 lg:pb-16">
+      <div className="relative mx-auto flex min-h-[100svh] max-w-shell flex-col justify-end px-2 pb-12 pt-28 sm:px-4 sm:pb-14 sm:pt-32 lg:px-5 xl:px-11 lg:pb-16">
         <div className="max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -87,10 +89,8 @@ export function Hero() {
             transition={{ duration: 0.75, delay: 0.18, ease: [0.16, 1, 0.3, 1] }}
             className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center"
           >
-            <Button asChild size="lg" className="rounded-full shadow-glow">
-              <Link href={SITE.donateUrl} rel="noopener noreferrer" target="_blank">
-                Donate Now
-              </Link>
+            <Button type="button" size="lg" className="rounded-full shadow-glow" onClick={openPaymentMethods}>
+              Donate Now
             </Button>
             <Button asChild size="lg" variant="secondary" className="rounded-full">
               <Link href="/impact/">See Our Impact</Link>

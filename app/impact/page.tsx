@@ -21,7 +21,7 @@ export default function ImpactPage() {
   return (
     <main className="bg-ivory">
       <section className="border-b border-hope/10 bg-white">
-        <div className="mx-auto max-w-shell px-3 py-16 sm:px-5 sm:py-20 lg:px-6 xl:px-10">
+        <div className="mx-auto max-w-shell px-2 py-16 sm:px-4 sm:py-20 lg:px-5 xl:px-10">
           <div className="max-w-5xl space-y-4">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Impact</div>
             <h1 className="font-serif text-[clamp(2.35rem,5vw,3.55rem)] font-semibold leading-[1.02] tracking-tight text-hope-deep">
@@ -43,7 +43,7 @@ export default function ImpactPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-shell px-3 py-14 sm:px-5 lg:px-6 xl:px-10">
+      <section className="mx-auto max-w-shell px-2 py-14 sm:px-4 lg:px-6 xl:px-10">
         <SectionReveal className="max-w-5xl space-y-3">
           <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Scorecard chorus</div>
           <h2 className="font-serif text-[clamp(2.05rem,4vw,2.95rem)] font-semibold leading-tight tracking-tight text-hope-deep">
@@ -56,7 +56,7 @@ export default function ImpactPage() {
       </section>
 
       <section id="transparency" className="border-y border-hope/10 bg-white py-14 sm:py-16">
-        <div className="mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+        <div className="mx-auto max-w-shell px-2 sm:px-4 lg:px-5 xl:px-10">
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:items-start">
             <SectionReveal className="max-w-xl space-y-4">
               <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Allocation discipline</div>
@@ -83,12 +83,12 @@ export default function ImpactPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-shell px-3 pb-14 sm:px-5 lg:px-6 xl:px-10">
+      <section className="mx-auto max-w-shell px-2 pb-14 sm:px-4 lg:px-6 xl:px-10">
         <GlobalImpactMap />
       </section>
 
       <section id="reports" className="border-t border-hope/10 bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+        <div className="mx-auto max-w-shell px-2 sm:px-4 lg:px-5 xl:px-10">
           <SectionReveal className="max-w-5xl space-y-3">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Reports archive</div>
             <h2 className="font-serif text-[clamp(2.05rem,4vw,2.95rem)] font-semibold leading-tight tracking-tight text-hope-deep">

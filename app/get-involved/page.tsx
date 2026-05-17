@@ -22,7 +22,7 @@ export default function GetInvolvedPage() {
     <main className="bg-ivory">
       <section className="relative overflow-hidden border-b border-hope/10 bg-hope-deep text-white">
         <div className="pointer-events-none absolute inset-0 bg-hero-radial opacity-[0.55]" />
-        <div className="relative mx-auto max-w-shell px-3 py-16 sm:px-5 sm:py-20 lg:px-6 xl:px-10">
+        <div className="relative mx-auto max-w-shell px-2 py-16 sm:px-4 sm:py-20 lg:px-5 xl:px-10">
           <div className="max-w-5xl space-y-4">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-white/60">Get involved</div>
             <h1 className="font-serif text-[clamp(2.4rem,5vw,3.65rem)] font-semibold leading-[1.02] tracking-tight">
@@ -47,7 +47,7 @@ export default function GetInvolvedPage() {
         </div>
       </section>
 
-      <section id="volunteer" className="mx-auto max-w-shell px-3 py-16 sm:px-5 sm:py-20 lg:px-6 xl:px-10">
+      <section id="volunteer" className="mx-auto max-w-shell px-2 py-16 sm:px-4 sm:py-20 lg:px-5 xl:px-10">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-start">
           <SectionReveal className="max-w-2xl space-y-5">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Volunteer arcs</div>
@@ -87,7 +87,7 @@ export default function GetInvolvedPage() {
       </section>
 
       <section id="partner" className="border-t border-hope/10 bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+        <div className="mx-auto max-w-shell px-2 sm:px-4 lg:px-5 xl:px-10">
           <div className="max-w-5xl space-y-5">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Partnerships</div>
             <h2 className="font-serif text-[clamp(2.1rem,4vw,3rem)] font-semibold leading-tight tracking-tight text-hope-deep">
@@ -122,11 +122,11 @@ export default function GetInvolvedPage() {
         </div>
       </section>
 
-      <section id="donate" className="mx-auto max-w-shell px-3 py-16 sm:px-5 sm:py-20 lg:px-6 xl:px-10">
+      <section id="donate" className="mx-auto max-w-shell px-2 py-16 sm:px-4 sm:py-20 lg:px-5 xl:px-10">
         <DonationCard tiers={[...DONATION_TIERS]} />
       </section>
 
-      <section className="mx-auto max-w-shell px-3 pb-20 sm:px-5 sm:pb-24 lg:px-6 xl:px-10">
+      <section className="mx-auto max-w-shell px-2 pb-20 sm:px-4 sm:pb-24 lg:px-5 xl:px-10">
         <CTASection
           eyebrow="Still deciding how you’d like to help?"
           title="We'll triage thoughtfully—never pressure theatrically"

@@ -25,13 +25,13 @@ export function StoryCard({ story, className }: { story: Story; className?: stri
         className,
       )}
     >
-      <div className="relative aspect-[16/11] overflow-hidden">
+      <div className="relative aspect-[16/10] overflow-hidden lg:aspect-[15/10]">
         <Image
           src={story.image}
           alt={story.imageAlt}
           fill
           className="object-cover transition duration-700 group-hover:scale-[1.03]"
-          sizes="(max-width: 768px) 100vw, 38vw"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 34vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-hope-deep/35 via-transparent to-transparent" />
         <div className="absolute inset-x-0 bottom-0 p-6">
@@ -41,8 +41,8 @@ export function StoryCard({ story, className }: { story: Story; className?: stri
         </div>
       </div>
 
-      <div className="flex flex-1 flex-col p-8">
-        <h3 className="font-serif text-2xl font-semibold tracking-tight text-hope-deep">
+      <div className="flex flex-1 flex-col p-6 sm:p-8">
+        <h3 className="font-serif text-xl font-semibold tracking-tight text-hope-deep sm:text-2xl">
           {story.title}
         </h3>
         <p className="mt-4 text-base leading-relaxed text-hope-muted">{story.beforeAfter}</p>

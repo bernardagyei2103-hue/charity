@@ -4,6 +4,7 @@ import { DM_Sans, Fraunces } from "next/font/google";
 import "./globals.css";
 
 import { Navbar } from "@/components/navbar";
+import { DonatePaymentModalProvider } from "@/components/providers/donate-payment-modal-provider";
 import { Footer } from "@/components/footer";
 import { ScrollProgress } from "@/components/layout/ScrollProgress";
 import { SITE } from "@/lib/site";
@@ -79,10 +80,12 @@ export default function RootLayout({
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
-        <ScrollProgress />
-        <Navbar />
-        <div className="min-h-[60svh]">{children}</div>
-        <Footer />
+        <DonatePaymentModalProvider>
+          <ScrollProgress />
+          <Navbar />
+          <div className="min-h-[60svh]">{children}</div>
+          <Footer />
+        </DonatePaymentModalProvider>
       </body>
     </html>
   );

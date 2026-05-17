@@ -52,7 +52,7 @@ export default function AboutPage() {
     <main className="bg-ivory">
       <section className="relative overflow-hidden border-b border-hope/10 bg-hope-deep text-white">
         <div className="pointer-events-none absolute inset-0 bg-hero-radial opacity-[0.55]" />
-        <div className="relative mx-auto max-w-shell px-3 py-16 sm:px-5 sm:py-20 lg:px-6 xl:px-10">
+        <div className="relative mx-auto max-w-shell px-2 py-16 sm:px-4 sm:py-20 lg:px-5 xl:px-10">
           <div className="max-w-5xl">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-white/60">About</div>
             <h1 className="mt-4 font-serif text-[clamp(2.4rem,5vw,3.6rem)] font-semibold leading-tight tracking-tight">
@@ -75,7 +75,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-shell px-3 py-16 sm:px-5 lg:px-6 xl:px-10">
+      <section className="mx-auto max-w-shell px-2 py-16 sm:px-4 lg:px-6 xl:px-10">
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center">
           <SectionReveal>
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Where we anchor</div>
@@ -154,7 +154,7 @@ export default function AboutPage() {
       </section>
 
       <section className="border-t border-hope/10 bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+        <div className="mx-auto max-w-shell px-2 sm:px-4 lg:px-5 xl:px-10">
           <SectionReveal className="max-w-5xl space-y-3">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Leadership</div>
             <h2 className="font-serif text-[clamp(2.05rem,4vw,2.95rem)] font-semibold leading-tight tracking-tight text-hope-deep">
@@ -184,7 +184,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-shell px-3 pb-20 sm:px-5 sm:pb-24 lg:px-6 xl:px-10">
+      <section className="mx-auto max-w-shell px-2 pb-20 sm:px-4 sm:pb-24 lg:px-5 xl:px-10">
         <CTASection
           tone="ivory"
           eyebrow="We answer hard questions enthusiastically"

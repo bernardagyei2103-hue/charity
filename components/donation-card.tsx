@@ -6,6 +6,7 @@ import { HeartHandshake } from "lucide-react";
 
 import { SITE } from "@/lib/site";
 import { cn } from "@/lib/utils";
+import { useDonatePaymentModal } from "@/components/providers/donate-payment-modal-provider";
 import { Button } from "@/components/ui/button";
 
 export type DonationTier = {
@@ -20,6 +21,7 @@ export function DonationCard({
   tiers: DonationTier[];
   className?: string;
 }) {
+  const { openPaymentMethods } = useDonatePaymentModal();
   return (
     <div
       className={cn(
@@ -74,14 +76,11 @@ export function DonationCard({
                   Custom donation
                 </Link>
               </Button>
-              <Button asChild size="xl" className="w-full rounded-2xl">
-                <Link href={SITE.donateUrl} target="_blank" rel="noopener noreferrer">
-                  Donate securely
-                </Link>
+              <Button type="button" size="xl" className="w-full rounded-2xl" onClick={openPaymentMethods}>
+                Donate securely
               </Button>
               <p className="text-center text-[12px] leading-relaxed text-hope-muted">
-                No payment details are captured on this site — you’ll finish your gift through our audited
-                partner portal.
+                Cash App and Venmo details open in this window—preset amounts above still use the audited partner checkout.
               </p>
             </div>
           </div>

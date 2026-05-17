@@ -8,12 +8,14 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import { NAV_LINKS, SITE } from "@/lib/site";
 import { cn } from "@/lib/utils";
+import { useDonatePaymentModal } from "@/components/providers/donate-payment-modal-provider";
 import { Button } from "@/components/ui/button";
 
 export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { openPaymentMethods } = useDonatePaymentModal();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 14);
@@ -35,7 +37,7 @@ export function Navbar() {
           : "border-b border-transparent bg-ivory/70 backdrop-blur-md",
       )}
     >
-      <div className="flex h-[72px] w-full items-center justify-between px-4 sm:px-5 lg:px-6 xl:px-10">
+      <div className="flex h-[72px] w-full items-center justify-between px-3 sm:px-4 lg:px-5 xl:px-10">
         <Link
           href="/"
           className="group flex items-center gap-3"
@@ -79,10 +81,8 @@ export function Navbar() {
           <Button asChild variant="outline" size="sm" className="rounded-full">
             <Link href="/get-involved/">Volunteer</Link>
           </Button>
-          <Button asChild size="sm" className="rounded-full">
-            <Link href={SITE.donateUrl} rel="noopener noreferrer" target="_blank">
-              Donate Now
-            </Link>
+          <Button type="button" size="sm" className="rounded-full" onClick={openPaymentMethods}>
+            Donate Now
           </Button>
         </div>
 
@@ -108,7 +108,7 @@ export function Navbar() {
             transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
             className="border-t border-hope/10 bg-ivory/95 backdrop-blur-xl lg:hidden"
           >
-            <div className="w-full space-y-2 px-4 py-4 sm:px-5 lg:px-6 xl:px-10">
+            <div className="w-full space-y-2 px-3 py-4 sm:px-4 lg:px-5 xl:px-10">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.href}
@@ -122,10 +122,15 @@ export function Navbar() {
                 <Button asChild variant="outline" className="w-full rounded-2xl">
                   <Link href="/get-involved/">Volunteer</Link>
                 </Button>
-                <Button asChild className="w-full rounded-2xl">
-                  <Link href={SITE.donateUrl} rel="noopener noreferrer" target="_blank">
-                    Donate
-                  </Link>
+                <Button
+                  type="button"
+                  className="w-full rounded-2xl"
+                  onClick={() => {
+                    openPaymentMethods();
+                    setOpen(false);
+                  }}
+                >
+                  Donate
                 </Button>
               </div>
             </div>

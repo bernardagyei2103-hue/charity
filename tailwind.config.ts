@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       maxWidth: {
-        shell: "min(120rem, calc(100vw - clamp(0.875rem, 2.75vw, 1.75rem)))",
+        shell: "calc(100vw - clamp(12px, 2.75vw, 24px))",
       },
       colors: {
         hope: {

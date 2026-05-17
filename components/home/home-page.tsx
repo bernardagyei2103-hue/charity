@@ -36,7 +36,7 @@ export function HomePage() {
       <TrustBar />
 
       {/* About */}
-      <section className="mx-auto max-w-shell px-3 py-16 sm:px-5 sm:py-20 lg:px-6 xl:px-10">
+      <section className="mx-auto max-w-shell px-2 py-16 sm:px-4 sm:py-20 lg:px-5 xl:px-10">
         <div className="grid gap-12 xl:gap-14 2xl:gap-16 lg:grid-cols-2 lg:items-center">
           <SectionReveal>
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Our story</div>
@@ -46,7 +46,7 @@ export function HomePage() {
             <div className="mt-6 space-y-5 text-base leading-relaxed text-hope-muted">
               <p>
                 Founders met families whose futures were bottlenecked—not by ambition, but by missing basics:
-                textbooks, clinician minutes, liters of safe water, credit to startagain after shocks.
+                textbooks, clinician minutes, liters of safe water, credit to start again after shocks.
               </p>
               <p>
                 The Guild exists to shorten that bottleneck with programs co-owned by neighbors, audited books,
@@ -103,7 +103,7 @@ export function HomePage() {
 
       {/* Impact areas */}
       <section className="bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+        <div className="mx-auto max-w-shell px-2 sm:px-4 lg:px-5 xl:px-10">
           <SectionReveal className="max-w-5xl">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">
               Pillars that hold everything up
@@ -128,7 +128,7 @@ export function HomePage() {
       {/* Impact stats */}
       <section className="relative overflow-hidden py-16 sm:py-20">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ivory to-white" />
-        <div className="relative mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+        <div className="relative mx-auto max-w-shell px-2 sm:px-4 lg:px-5 xl:px-10">
           <SectionReveal className="max-w-5xl">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">
               Accountability in numbers
@@ -156,7 +156,7 @@ export function HomePage() {
 
       {/* Stories */}
       <section className="bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+        <div className="mx-auto max-w-shell px-2 sm:px-4 lg:px-5 xl:px-10">
           <SectionReveal className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
             <div className="max-w-5xl">
               <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">
@@ -173,8 +173,11 @@ export function HomePage() {
               <Link href="/stories/">Explore all stories</Link>
             </Button>
           </SectionReveal>
+        </div>
 
-          <div className="mt-12 grid gap-8 lg:grid-cols-3">
+        {/* Full shell width cards: minimal side inset vs header so three columns span edge-to-edge within the viewport shell */}
+        <div className="mx-auto mt-10 max-w-shell px-0 sm:mt-11 sm:px-1 lg:mt-12 lg:px-2 xl:px-4">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-5 xl:gap-6 [&>*]:min-w-0">
             {FEATURED_STORIES.map((s) => (
               <StoryCard key={s.title} story={s} />
             ))}
@@ -183,12 +186,12 @@ export function HomePage() {
       </section>
 
       {/* Donation */}
-      <section id="donate" className="mx-auto max-w-shell px-3 py-16 sm:px-5 sm:py-20 lg:px-6 xl:px-10">
+      <section id="donate" className="mx-auto max-w-shell px-2 py-16 sm:px-4 sm:py-20 lg:px-5 xl:px-10">
         <DonationCard tiers={[...DONATION_TIERS]} />
       </section>
 
       {/* Programs */}
-      <section className="mx-auto max-w-shell px-3 pb-16 sm:px-5 sm:pb-20 lg:px-6 xl:px-10">
+      <section className="mx-auto max-w-shell px-2 pb-16 sm:px-4 sm:pb-20 lg:px-5 xl:px-10">
         <SectionReveal className="max-w-5xl">
           <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">
             Proof you can wander through
@@ -208,7 +211,7 @@ export function HomePage() {
       {/* Transparency */}
       <section id="transparency" className="relative overflow-hidden border-y border-hope/10 bg-ivory py-16 sm:py-20">
         <div className="pointer-events-none absolute -right-44 top-20 h-[420px] w-[420px] rounded-full bg-sunrise/10 blur-[130px]" />
-        <div className="relative mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+        <div className="relative mx-auto max-w-shell px-2 sm:px-4 lg:px-5 xl:px-10">
           <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:items-start">
             <SectionReveal className="max-w-xl space-y-4">
               <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Transparency</div>
@@ -252,7 +255,7 @@ export function HomePage() {
       </section>
 
       {/* Volunteer / Partner */}
-      <section className="mx-auto max-w-shell px-3 py-16 sm:px-5 sm:py-20 lg:px-6 xl:px-10">
+      <section className="mx-auto max-w-shell px-2 py-16 sm:px-4 sm:py-20 lg:px-5 xl:px-10">
         <div className="grid gap-8 lg:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, y: 14 }}
@@ -315,13 +318,13 @@ export function HomePage() {
       </section>
 
       {/* Map */}
-      <section className="mx-auto max-w-shell px-3 pb-16 sm:px-5 sm:pb-20 lg:px-6 xl:px-10">
+      <section className="mx-auto max-w-shell px-2 pb-16 sm:px-4 sm:pb-20 lg:px-5 xl:px-10">
         <GlobalImpactMap />
       </section>
 
       {/* News */}
       <section className="border-t border-hope/10 bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+        <div className="mx-auto max-w-shell px-2 sm:px-4 lg:px-5 xl:px-10">
           <SectionReveal className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
             <div className="max-w-5xl">
               <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">
@@ -365,7 +368,7 @@ export function HomePage() {
       </section>
 
       {/* FAQ */}
-      <section className="mx-auto max-w-shell px-3 pb-16 sm:px-5 sm:pb-20 lg:px-6 xl:px-10">
+      <section className="mx-auto max-w-shell px-2 pb-16 sm:px-4 sm:pb-20 lg:px-5 xl:px-10">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.15fr)] lg:items-start">
           <SectionReveal>
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">
@@ -387,13 +390,14 @@ export function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="mx-auto max-w-shell px-3 pb-20 sm:px-5 sm:pb-24 lg:px-6 xl:px-10">
+      <section className="mx-auto max-w-shell px-2 pb-20 sm:px-4 sm:pb-24 lg:px-5 xl:px-10">
         <CTASection
           eyebrow="The next chapter begins now"
           title="Hope Begins With Action"
           subtext="Your contribution can create real change today—while our teams keep receipts, surveys, and maintenance ledgers painfully human and transparent."
           primary={{ label: "Donate Now", href: SITE.donateUrl, external: true }}
           secondary={{ label: "Become a Volunteer", href: "/get-involved/#volunteer" }}
+          primaryOpensPaymentModal
         />
       </section>
     </main>

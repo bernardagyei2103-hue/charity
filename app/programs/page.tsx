@@ -21,7 +21,7 @@ export default function ProgramsPage() {
     <main className="bg-ivory">
       <section className="relative overflow-hidden border-b border-hope/10 bg-white">
         <div className="pointer-events-none absolute inset-0 bg-hero-radial opacity-40" />
-        <div className="relative mx-auto max-w-shell px-3 py-16 sm:px-5 sm:py-20 lg:px-6 xl:px-10">
+        <div className="relative mx-auto max-w-shell px-2 py-16 sm:px-4 sm:py-20 lg:px-5 xl:px-10">
           <div className="max-w-5xl space-y-4">
             <div className="text-[11px] font-bold uppercase tracking-[0.34em] text-hope-muted">Programs</div>
             <h1 className="font-serif text-[clamp(2.4rem,5vw,3.65rem)] font-semibold leading-[1.02] tracking-tight text-hope-deep">
@@ -57,7 +57,7 @@ export default function ProgramsPage() {
 
       <CommunitySection />
 
-      <section className="mx-auto max-w-shell px-3 pb-20 sm:px-5 sm:pb-24 lg:px-6 xl:px-10">
+      <section className="mx-auto max-w-shell px-2 pb-20 sm:px-4 sm:pb-24 lg:px-5 xl:px-10">
         <div className="rounded-[34px] bg-white p-8 shadow-soft ring-1 ring-hope/10 sm:p-12">
           <div className="grid gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center">
             <div>
@@ -139,7 +139,7 @@ function SectionShell({
 }) {
   return (
     <section id={id} className="border-t border-hope/10 bg-white py-16 sm:py-20">
-      <div className="mx-auto max-w-shell px-3 sm:px-5 lg:px-6 xl:px-10">
+      <div className="mx-auto max-w-shell px-2 sm:px-4 lg:px-5 xl:px-10">
         <div className={`grid gap-10 lg:grid-cols-2 lg:items-center ${reverse ? "lg:[&>*:first-child]:order-2" : ""}`}>
           <div className="relative min-h-[360px] overflow-hidden rounded-[30px] ring-1 ring-hope/10">
             <Image src={image} alt={alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />

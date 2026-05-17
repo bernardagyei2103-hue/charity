@@ -11,7 +11,7 @@ const partners = [
 export function TrustBar() {
   return (
     <section className="border-b border-hope/10 bg-white">
-      <div className="mx-auto max-w-shell px-3 py-10 sm:px-5 lg:px-6 xl:px-10">
+      <div className="mx-auto max-w-shell px-2 py-10 sm:px-4 lg:px-6 xl:px-10">
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:items-center">
           <SectionReveal className="space-y-4">
             <div className="flex flex-wrap items-center gap-2">
